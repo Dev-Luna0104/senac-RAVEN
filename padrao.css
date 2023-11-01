@@ -90,42 +90,88 @@ header nav a:hover {
 
 .container-animation {
     position: absolute;
-    top: 13px;
+    top: 35px;
     width: 180px;
     height: 250px;
     z-index: 1;
-    transform: rotateX(-35deg) rotateY(-45deg) translateZ(1.5625em);
+    transform: rotateX(-35deg) rotateY(-45deg) translateZ(1.5625em)
 }
 
+.right {
+    right: 0;
+}
 
-.a {
-    background-color: #594E4A;
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    position: relative;
-    animation: infinite 2s;
-    animation-name: animation-bloco ;
-    
+.cube {
+    position: absolute;
     transform-style: preserve-3d;
 }
 
+.a {
+    background-color: #594E4A;
+    /* border: #948f8e 1px solid; */
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: infinite 2s;
+    animation-name: animation-bloco ;
+    top: 50%;
+    left: 50%;
+    
+    
+}
+
+.a:before,
+.a:after {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  transform-origin: 0 100%;
+  box-shadow: inherit;
+  background: #594E4A;
+  content: "";
+}
+
+.a:before {
+    bottom: 100%;
+    transform: rotateX(90deg);
+  }
+  
+.a:after {
+    left: 100%;
+    transform: rotateY(90deg);
+  }
+  
+.a:nth-child() {
+    margin-top: 6.25em;
+    background-color: #998f8b;
+    animation-delay: -1.2s;
+  }
+  
+.a:nth-child(1):before {
+    color: #ff6488;
+  }
+  
+.a:nth-child(1):after {
+    color: #ff416d;
+  }
+  
+
+
 .a01{
+    z-index: 2;
     top: 15px;
-    left: 0px;
+    left: 15px;
     animation-delay: 0;
 }
 .a02{
-    left: 50px;
-    top: 25px;
-    animation-delay: 0.5s;
+    
+    z-index: 1;
+    left: 65px;
+    top: -34px;
+    animation-delay: 0s;
 
 }
-.a03{
-    top: -25px;
-    animation-delay: 2s;
-    left: 115px;
-}
+
 
 @keyframes animation-bloco {
 
