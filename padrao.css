@@ -94,8 +94,9 @@ header nav a:hover {
     width: 180px;
     height: 250px;
     z-index: 1;
-
+    transform: rotateX(-35deg) rotateY(-45deg) translateZ(1.5625em);
 }
+
 
 .a {
     background-color: #594E4A;
@@ -105,6 +106,8 @@ header nav a:hover {
     position: relative;
     animation: infinite 2s;
     animation-name: animation-bloco ;
+    
+    transform-style: preserve-3d;
 }
 
 .a01{
