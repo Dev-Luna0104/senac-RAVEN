@@ -120,7 +120,7 @@ header nav a:hover {
     
 }
 
-.a:before,
+    .a:before,
 .a:after {
   position: absolute;
   width: inherit;
@@ -212,7 +212,7 @@ main{
 footer {
     width: calc(100% - 50px);
     height: 35px;
-    position: fixed;
+    position: absolute;
     bottom: 15px;
     background-color: #594E4A;
     border-radius: 35px;

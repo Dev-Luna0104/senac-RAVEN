@@ -1,0 +1,89 @@
+body {
+    padding: 25px 25px 0px;
+}
+main {
+    overflow: hidden;
+
+ }
+
+.alternando {
+    position: absolute;
+    
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    border: 1.5px solid #fff;
+    border-top: 2.5px double #fff;
+    border-right: 2.5px double #fff;
+    border-radius: 5px;
+    width: 70px;
+    height: 17px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: .08s;
+}
+
+.bar:hover {
+    border: 1.5px solid #fff;
+    border-top: 2.5px double #fff;
+    border-right: 2.5px double #fff;
+    background-color: #ffffff99;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+margin-top: 15px;
+    
+    width:  500%;
+    height:100%;
+}
+
+.slide {
+  
+    width: 20%;
+    transition: 1s ease-in ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.fundo-slide {
+    padding:  5rem 25rem;
+    margin: 0 55px;
+    background-color: aquamarine;
+}
+
+.fundo-slide ul {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 250px;
+    background-color: red;
+
+}
+
+#slide01:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide02:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide03:checked ~ .s1 {
+    margin-left: -40%;
+}
+

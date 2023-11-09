@@ -1,0 +1,111 @@
+main{
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #594E4A;
+}
+
+form{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+fieldset{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../assets/30d317d2-60a8-4ab1-9d58-db095e199351.png");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(4px);
+
+
+}
+fieldset div {
+width: 500px;
+height: 100%;
+margin-top: 50px;
+}
+
+fieldset p{
+    margin: 30px;
+}
+legend { 
+    margin-left: calc(50% - 150px) ;
+    display: flex;
+    align-items: center;
+}
+button {
+    margin: 31px;
+    border-radius: 34px;
+    padding: 2px 5px; 
+}
+input {
+
+    border-radius: 29px;
+    padding: 2px 5px ;
+    width: 230px;
+}
+textarea {
+    border-radius: 34px;
+    padding: 2px 5px;
+   margin-left: 50px;
+   max-width: 250px;
+   max-height: 26px;
+}
+.img1 {
+    height: 297px;
+    position: absolute;
+    left: 25px;
+    top: 2%;
+    animation: Mika 3s infinite;
+}
+@keyframes Mika {
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    } 
+    100%{
+        transform: rotate(-5deg);
+    } 
+}
+.img2 {
+    height: 430px;
+right: 45px;
+position: absolute;
+filter: drop-shadow(#fff 2px 2px 0);
+transform: rotate(5deg);
+animation: Grata  3s infinite;
+}
+@keyframes Mika {
+    0%{
+    filter:drop-shadow(#fff 2px 2px 0);
+    }
+    50%{
+    filter:drop-shadow(#fff -2px -2px 0); 
+    } 
+    100%{
+    filter:drop-shadow(#fff 2px 2px 0); 
+    } 
+
+}
+@keyframes Grata {
+    0%{
+    filter:drop-shadow(#fff 2px 2px 0);
+    }
+    50%{
+    filter:drop-shadow(#fff -2px -2px 0); 
+    } 
+    100%{
+    filter:drop-shadow(#fff 2px 2px 0); 
+    } 
+
+}
