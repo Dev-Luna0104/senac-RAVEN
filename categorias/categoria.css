@@ -3,6 +3,7 @@ body {
 }
 main {
     overflow: hidden;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 
  }
 
@@ -59,21 +60,6 @@ margin-top: 15px;
 
 
 
-.fundo-slide {
-    padding:  5rem 25rem;
-    margin: 0 55px;
-    background-color: aquamarine;
-}
-
-.fundo-slide ul {
-    visibility: hidden;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 250px;
-    background-color: red;
-
-}
 
 #slide01:checked ~ .s1 {
     margin-left: 0;
@@ -87,3 +73,76 @@ margin-top: 15px;
     margin-left: -40%;
 }
 
+
+.fundo-slide {
+    margin: 0 55px 35px;
+    padding:  8rem 20rem;
+    
+    background-color: aquamarine;
+    box-shadow: inset #000 0 0 5px 2px ;
+    border-radius: 15px;
+    font-size: 3.4rem;
+    font-weight: 800;
+
+    transition: .1s ease;
+}
+
+.fundo-slide:hover {
+    box-shadow: inset #000 0 0 25px 4px ;
+    backdrop-filter: contrast(0.7);    
+}
+
+
+
+.slide-game {
+    background: url('../assets/img-games/game.jpg')  ;
+    background-size: cover;
+
+    /* width: 70%; */
+}
+
+.modal {
+    display: none;
+    filter: opacity(0);
+    transition: .2s ease;
+}
+
+.fundo-slide:hover ul{
+    filter: opacity(1);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    inset: 10px 15px;
+
+    transition: .2s ease;
+}
+
+.fundo-slide:hover span {
+    opacity: 0;
+
+    transition: .1s ease;
+
+}
+
+.modal li {
+    text-align: center;
+    width: 80%;
+    height: 50%;
+    font-size: 1.4rem;
+    transition: 1s ease-in;
+}
+
+
+/* -- img-game ------------------------------------------------ */
+
+.img-finalf:hover {background-image: url('../assets/img-games/final-fantasy.jpg');}
+.img-creed:hover {background-image: url('../assets/img-games/assassins.jpg');}
+.img-minecraft:hover {background-image: url('../assets/img-games/minecraft.jpg');}
+.img-impact:hover {background-image: url('../assets/img-games/genshin.jpg');}
+.img-roblox:hover {background-image: url('../assets/img-games/roblox-lead-image-cnnu.jpg');}
+.img-gta:hover {background-image: url('../assets/img-games/gta5.jpg');}
+.img-undertale:hover {background-image: url('../assets/img-games/undertale01.jfif');}
+.img-pk:hover {background-image: url('../assets/img-games/pk.jpg');}
+.img-valley:hover {background-image: url('../assets/img-games/stardew01.jpg');}
+.img-persona:hover {background-image: url('../assets/img-games/persona02.jpg');}
