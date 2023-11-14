@@ -43,7 +43,7 @@ input {
     display: flex;
     justify-content: start;
     flex-direction: row;
-margin-top: 15px;
+margin-top: 5px;
     
     width:  500%;
     height:100%;
@@ -76,7 +76,7 @@ margin-top: 15px;
 
 .fundo-slide {
     margin: 0 55px 35px;
-    padding:  8rem 20rem;
+    padding:  8rem 28rem;
     
     background-color: aquamarine;
     box-shadow: inset #000 0 0 5px 2px ;
@@ -114,6 +114,7 @@ margin-top: 15px;
     grid-template-columns: repeat(2, 1fr);
     position: absolute;
     inset: 10px 15px;
+    column-gap: 15%;
 
     transition: .2s ease;
 }
@@ -126,13 +127,40 @@ margin-top: 15px;
 }
 
 .modal li {
+    border-radius: 15px;
     text-align: center;
-    width: 80%;
-    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
     font-size: 1.4rem;
     transition: 1s ease-in;
+    box-shadow: #000000aa 0 0 2px;
+    background-position: center;
+    background-size: cover;
 }
 
+.modal li:hover {
+    position: absolute;
+    border-radius: 15px;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width:50%;
+    transition: all 1s;
+}
+
+.modal li:nth-child(odd):hover {left: 0;}
+.modal li:nth-child(even):hover {right: 0;}
+
+.modal li p {
+    color: #000;
+}
+
+.modal li:hover p {
+    opacity: 0;
+}
 
 /* -- img-game ------------------------------------------------ */
 
