@@ -23,7 +23,7 @@ main h2 {
 
 .alternando {
     position: absolute;
-    
+    z-index: 2;
     bottom: 35px;
     left: 50%;
     transform: translate(-50%);
@@ -57,7 +57,7 @@ input {
     display: flex;
     justify-content: start;
     flex-direction: row;
-margin-top: -35px;
+    margin-top: -75px;
 
    
     width:  500%;
@@ -93,9 +93,11 @@ margin-top: -35px;
 }
 
 .fundo-slide {
-    margin: 0 55px 35px;
-    padding:  8rem 28rem;
-    
+    width:70vw;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: aquamarine;
     box-shadow: inset #000 0 0 5px 2px ;
     border-radius: 15px;
@@ -110,6 +112,10 @@ margin-top: -35px;
     backdrop-filter: contrast(0.7);    
 }
 
+.fundo-slide:hover main {
+    opacity: 0;
+    color: red;
+}
 
 /* -- background slide ----------------------------- */
 .slide-game {
@@ -164,7 +170,7 @@ margin-top: -35px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     position: absolute;
-    inset: 10px 15px;
+inset: 10px 15px;
     column-gap: 15%;
 
     transition: .2s ease;
@@ -174,7 +180,7 @@ margin-top: -35px;
     background-color: #ffffff55;
     backdrop-filter: blur(5px);
     border-radius: 25px;
-    padding: 5px 15px;
+    
     box-shadow: #000 1px 1px 10px;
 }
 
@@ -228,6 +234,7 @@ margin-top: -35px;
 /* -- site ----------------------------------------------------- */
 
 
+
 .slide-site span {
     font-size: 3rem;
     padding: 0;
@@ -235,29 +242,33 @@ margin-top: -35px;
 }
 
 
-.slide-site:hover {
-    padding:  13rem 28rem;
- 
-}
-
-
 
 .modal-site li {
     position: relative;
-    top: 0;
 
+    width: 150%;
+    height: 250px;
+    top: 5%;
+    
+    transition: .5s ease;
 }
 
 .modal-site li:hover{
+    display: flex;
+    justify-content: center;
+    align-items: end;
     position: relative;
     border: #fff 1px solid;
-    width: auto;
-    background-color: #000000dd;
+    width: 150%;
+    background-color: #000000ef;
+    box-shadow: 1px 1px 5px #000;
+    height: auto;
+    
 }
 
 
 
-.modal-site li:hover div {
+.modal-site li:hover > div {
    
     
     height:auto ;
@@ -265,7 +276,7 @@ margin-top: -35px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.modal-site li div:nth-child(3){
+.modal-site li > div:nth-child(3){
     right: 0;
 }
 
@@ -287,7 +298,10 @@ margin-top: -35px;
     display: block;
     position: absolute;
     top: 0;
+    left: 0;
+    z-index: 1;
     width: 100%;
+    height: calc(auto - 25px);
     box-shadow: #000 0 5px 5px;
     transition: .4s;
 }
@@ -297,33 +311,48 @@ margin-top: -35px;
     box-shadow: #000 2px 2px 35px -10px;
     transform: scale(1.7);
     border-radius: 25px;
+    z-index: 3;
 }
 
-.modal-site li:hover div{
+.modal-site li:hover > div > div,
+.modal-site li:hover > div {
 
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    row-gap: 10px;
-    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    opacity: 2;
       
 }
+
+.modal-site li:hover > div > div {
+    background-color: #000000ef;
+    box-shadow: #000 0 -2px 4px;
+    border-radius: 15px;
+    z-index: 2;
+}
+
 
 .modal-site li:hover div p {
     
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.85rem;
     padding:2px;
     height:auto ;
     opacity: 1;
 }
 
-.modal-site li:hover div p:nth-child(2){
-    margin-top: 155px;
-    
+.modal-site li:hover div > div{
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.modal-site li:hover div:nth-child(2) > div,
+.modal-site li:hover div:nth-child(3) > div{
+    top: ;
 }
 
 
