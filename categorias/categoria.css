@@ -3,7 +3,6 @@ body {
 }
 main {
     overflow: hidden;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 
  }
 
@@ -140,8 +139,9 @@ input {
 }
 
 .slide-youtube {
-    background: url('../assets/img-youtube/cellbit.png') no-repeat #fff;
-
+    background: url('../assets/img-youtube/cellbit.png') no-repeat ;
+    background-color: #fff;
+    color: #000;
 }
 /* -------------------------------------------------------------------------------------------------------------------------- */
 .modal {
@@ -184,7 +184,7 @@ inset: 10px 15px;
     box-shadow: #000 1px 1px 10px;
 }
 
-.fundo-slide:hover span {
+.fundo-slide:hover > span {
     opacity: 0;
 
     transition: .1s ease;
@@ -307,9 +307,9 @@ inset: 10px 15px;
 }
 
 .modal-site li:hover img:hover{
-    top:55px;
+    top:-125px;
     box-shadow: #000 2px 2px 35px -10px;
-    transform: scale(1.7);
+    transform: scale(1.5);
     border-radius: 25px;
     z-index: 3;
 }
@@ -350,27 +350,53 @@ inset: 10px 15px;
     bottom: 0;
 }
 
-.modal-site li:hover div:nth-child(2) > div,
-.modal-site li:hover div:nth-child(3) > div{
-    top: ;
+
+
+
+
+/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
+/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
+/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
+/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
+/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
+
+.slide-youtube:hover > span {
+    display: none;
 }
 
+.slide-youtube:hover .modal-youtube{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    filter: opacity(1);
+}
 
+.modal-youtube {
+    width: 50%;
+    position: relative;
+}
 
+.modal-youtube:hover {
+    inset: inherit;
+    position: relative;
+}
 
-/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
-/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
-/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
-/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
-/* -- youtube ------------------------------------------------------------------------------------------------------------------------- */
+.modal-youtube > li ul {
+    display: none;
+    opacity: 0;
+}
 
-.slide-youtube:hover ul,
-.slide-youtube:hover ul li,
-.slide-youtube:hover ul li span {
+.modal-youtube > li:hover {
+    position: relative;
     display: flex;
     opacity: 1;
     color: #000;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
 
 /* -- img-game ------------------------------------------------ */
 
