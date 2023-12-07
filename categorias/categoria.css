@@ -245,8 +245,8 @@ inset: 10px 15px;
 
 .modal-site li {
     position: relative;
-
-    width: 150%;
+    background-color: #000000dd;
+    width: 100%;
     height: 250px;
     top: 5%;
     
@@ -259,7 +259,7 @@ inset: 10px 15px;
     align-items: end;
     position: relative;
     border: #fff 1px solid;
-    width: 150%;
+    width: 100%;
     background-color: #000000ef;
     box-shadow: 1px 1px 5px #000;
     height: auto;
@@ -326,7 +326,7 @@ inset: 10px 15px;
 }
 
 .modal-site li:hover > div > div {
-    background-color: #000000ef;
+    background-color: #000000;
     box-shadow: #000 0 -2px 4px;
     border-radius: 15px;
     z-index: 2;
@@ -365,15 +365,18 @@ inset: 10px 15px;
 }
 
 .slide-youtube:hover .modal-youtube{
+    padding: 0 5px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     display: flex;
+    
     filter: opacity(1);
 }
 
 .modal-youtube {
-    width: 50%;
+    width: 150px;
+    height: 85%;
     position: relative;
 }
 
@@ -382,19 +385,117 @@ inset: 10px 15px;
     position: relative;
 }
 
-.modal-youtube > li ul {
-    display: none;
-    opacity: 0;
+.modal-youtube > li{
+    width: 400px;
+    box-shadow: #000 inset 0 0 45px -15px;
+    background-color: #00000033;
 }
-
 .modal-youtube > li:hover {
+    width: 400px;
     position: relative;
     display: flex;
     opacity: 1;
     color: #000;
     flex-direction: column;
     justify-content: center;
+    align-items: start;
+    position: relative;
 }
+
+
+
+
+.modal-youtube > li h3,
+.modal-youtube > li span {
+    font-size: 1.7rem;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: initial;
+
+}
+
+.modal-youtube > li:hover  h3 ,
+.modal-youtube > li:hover  span {display: none;}
+
+
+.modal-youtube > li ul {
+    display: none;
+    opacity: 0;
+}
+
+.modal-youtube:hover > li:hover ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 10px;
+    height: 80%;
+
+    opacity: 1;
+
+
+
+    box-shadow: #fff 3px 3px 2px ,#000 1px 1px 2px;
+    background-color: #ffffff55;
+    border-radius: 9px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+
+    transition: .3s ease;
+    animation: border-series 1.2s infinite ease;
+}
+
+@keyframes border-series {
+    0%{
+        box-shadow: #fff 3px 3px 2px;
+        width: 15px;
+    }
+
+    50%{
+        box-shadow: #fff 2px 1px 5px;
+        width: 20px;
+    }
+
+    100%{
+        box-shadow: #fff 3px 3px 2px;
+        width: 15px;
+    }
+}
+
+.modal-youtube:hover > li:hover ul:hover {
+    padding: 9px;
+    background-color: #ffffff66;
+    box-shadow:inset#000000aa 0 0 5px;    
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border: 1px #ffffff55 solid;
+    width: 85%;
+    animation: none;
+    backdrop-filter: blur(15px);
+}
+
+.modal-youtube:hover > li:hover ul li{
+    opacity: 0;
+    transition: all .7s;
+} 
+
+.modal-youtube:hover > li:hover ul:hover li {opacity: 1;} 
+
+
+
+.modal-youtube:hover > li:hover ul:hover li, 
+.modal-youtube:hover > li:hover ul:hover li:hover {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    box-shadow: none;
+    width: auto;
+    border-top: #00000033 1px solid;
+    border-bottom: #00000033 1px solid;
+    border-radius: 0;
+
+}
+
 
 
 
