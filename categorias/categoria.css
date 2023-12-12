@@ -307,7 +307,7 @@ inset: 10px 15px;
 }
 
 .modal-site li:hover img:hover{
-    top:-125px;
+    top:-50px;
     box-shadow: #000 2px 2px 35px -10px;
     transform: scale(1.5);
     border-radius: 25px;
@@ -473,14 +473,19 @@ inset: 10px 15px;
     width: 85%;
     animation: none;
     backdrop-filter: blur(15px);
+    height: auto;
 }
 
 .modal-youtube:hover > li:hover ul li{
+    display: none;
     opacity: 0;
     transition: all .7s;
 } 
 
-.modal-youtube:hover > li:hover ul:hover li {opacity: 1;} 
+.modal-youtube:hover > li:hover ul:hover li {
+    opacity: 1;
+    display: flex;
+} 
 
 
 
@@ -493,6 +498,7 @@ inset: 10px 15px;
     border-top: #00000033 1px solid;
     border-bottom: #00000033 1px solid;
     border-radius: 0;
+    font-size: 1rem;
 
 }
 
@@ -510,20 +516,80 @@ inset: 10px 15px;
 .img-undertale:hover {background-image: url('../assets/img-games/MicrosoftTeams-image.png');}
 .img-pk:hover {background-image: url('../assets/img-games/pk.jpg');}
 .img-valley:hover {background-image: url('../assets/img-games/stardew01.jpg');}
-.img-persona:hover {background-image: url('../assets/img-games/persona02.jpg');}
+.img-persona:hover {
+    background-image: url('../assets/img-games/persona02.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 55%;
+    background-color: #000;
+}
 
 /* -- img-serie ---------------------------------------------------- */
 
-.img-cor:hover {background-image: url('../assets/Séries-e-filmes/a\ cor\ que\ caiu\ do\ espaço.jpg');}
-.img-merlin:hover {background-image: url('../assets/Séries-e-filmes/As\ aventuras\ de\ Merlin.jpg');}
-.img-dungeons01:hover {background-image: url('../assets/Séries-e-filmes/dungeons-and-dragons.jpg');}
-.img-dungeons02:hover {background-image: url('../assets/Séries-e-filmes/Caverna\ do\ Dragão.webp');}
-.img-trones:hover {background-image: url('../assets/Séries-e-filmes/Game\ of\ Trones.jpg');}
-.img-pantera:hover {background-image: url('../assets/Séries-e-filmes/pantera\ negra.jpg');}
-.img-aneis:hover {background-image: url('../assets/Séries-e-filmes/senhor\ dos\ anéis.webp');}
+.img-cor:hover {
+    background-image: url('../assets/Séries-e-filmes/a\ cor\ que\ caiu\ do\ espaço.jpg');
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: 50% 20%;
+    background-color: #000;
+}
+.img-merlin:hover {
+    background-image: url('../assets/Séries-e-filmes/As\ aventuras\ de\ Merlin.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 130%;
+    background-position: 50% 75%;
+    background-color: #000;
+}
+.img-dungeons01:hover {
+    background-image: url('../assets/Séries-e-filmes/dungeons-and-dragons.jpg');
+    background-repeat: no-repeat;
+    background-size: 40% 125%;
+    background-position: 50% 45%;
+    background-color: #000;
+}
+.img-dungeons02:hover {
+    background-image: url('../assets/Séries-e-filmes/Caverna\ do\ Dragão.webp');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 50% 70%;
+    background-color: #000;
+}
+.img-trones:hover {
+    background-image: url('../assets/Séries-e-filmes/Game\ of\ Trones.jpg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 50% 80%;
+    background-color: #000;
+}
+.img-pantera:hover {
+    background-image: url('../assets/Séries-e-filmes/pantera\ negra.jpg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 10%;
+    background-color: #000;
+}
+.img-aneis:hover {
+    background-image: url('../assets/Séries-e-filmes/senhor\ dos\ anéis.webp');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 50% 25%;
+    background-color: #000;
+}
 .img-star:hover {background-image: url('../assets/Séries-e-filmes/starwars.webp');}
-.img-vikinks:hover {background-image: url('../assets/Séries-e-filmes/Vikings.jpg');}
-.img-warcraft:hover {background-image: url('../assets/Séries-e-filmes/warcraft.jpg');}
+.img-vikinks:hover {
+    background-image: url('../assets/Séries-e-filmes/Vikings.jpg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 25%;
+    background-color: #000;
+}
+.img-warcraft:hover {
+    background-image: url('../assets/Séries-e-filmes/warcraft.jpg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 25%;
+    background-color: #000;
+}
 
 /* -- img-site ------------------------------------------------------------------------------- */
 
